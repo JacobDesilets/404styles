@@ -1,0 +1,10 @@
+:root {
+    --base: #fafafa;
+    --accent: #3762bf;
+    --accent-lt: #618ce8;
+    --accent-dk: #070f21;
+}
+
+body {
+    background-color: var(--base);
+}
