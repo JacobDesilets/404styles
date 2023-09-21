@@ -30,14 +30,14 @@ body {
 
 img {
     max-width: 40%;
-    margin-top:20rem;
+    position:relative;
+    top:10vh;
+    right:7.5vw;
 }
 
 .parent {
     display: flex;
     justify-content: center;
-    border:red;
-    border-style: double;
 }
 
 .container {
@@ -45,11 +45,18 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     font-family: 'Dela Gothic One', serif;
+    position: relative;
+}
+
+.offset-left {
+    position:relative;
+    left: 10vw;
+    bottom: 5vw;
 }
 
 h1 {
     color: var(--accent);
-    font-size: 200px;
+    font-size: 20rem;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -57,13 +64,13 @@ h1 {
 h2 {
     color: var(--accent-lt);
     margin-top: 0px;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .back-link {
     color: var(--accent-dk);
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .back-link:hover {
@@ -84,4 +91,16 @@ footer {
 .border {
     border:green;
     border-style: dotted;
+}
+
+@media screen and (max-width: 1000px) {
+    .parent {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img {
+        top:-20vh;
+        left: 50vw;
+    }
 }
